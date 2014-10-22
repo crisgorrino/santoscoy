@@ -367,4 +367,69 @@ blockquote {
 .cf {
   *zoom: 1; }
 
+@font-face {
+  font-family: 'futura-book';
+  src: url("../fonts/futura_book.eot");
+  src: url("../fonts/futura_book.eot?#iefix") format("embedded-opentype"), url("../fonts/futura-book.woff") format("woff"), url("../fonts/futura-book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+html, body {
+  font-family: futura-book; }
+
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9); }
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px 0;
+    text-align: center; }
+    header nav ul li {
+      display: inline-block;
+      padding: 10px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: futura-book;
+        font-size: .7em;
+        display: block;
+        color: #bdbec1;
+        letter-spacing: 1px; }
+        header nav ul li a:hover {
+          color: #00aeef; }
+  header .logo-cont {
+    text-align: center;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070; }
+    header .logo-cont a {
+      display: inline-block; }
+
+.filtros {
+  text-align: center;
+  padding: 5% 0; }
+  .filtros a {
+    letter-spacing: 2px;
+    font-size: .8em;
+    text-decoration: none;
+    display: inline-block;
+    color: #bdbec1;
+    width: 30%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    opacity: .5;
+    transition: all 0.5s ease; }
+    .filtros a:hover {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      opacity: 1;
+      color: #00aeef;
+      transition: all 0.5s ease; }
+    .filtros a span {
+      display: block; }
+  .filtros a.active {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1;
+    color: #00aeef; }
+
 /*# sourceMappingURL=main.css.map */
