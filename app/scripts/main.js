@@ -1,50 +1,53 @@
-/*!
- *
- *  Web Starter Kit
- *  Copyright 2014 Google Inc. All rights reserved.
- *
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License
- *
- */
-(function () {
-  'use strict';
 
-  var querySelector = document.querySelector.bind(document);
+$(document).ready(function(){
+	//hide menu divs
+	$('.taller-cont').hide();
+	$('.editorial-cont').hide();
+	$('.contact-cont').hide();
+	$('.busqueda-cont').hide()
+	
+	
+	//general close button
+	$('.close').click(function(){
+		$(this).parent().slideUp('slow');
+	})
+	
+	
+	//busq close button
+	$('.close-busq').click(function(){
+		$('.busqueda-cont').slideUp('slow');
+	})
+	
+	
+	//contacto toggle
+	$('.contacto').click(function(e){
+		e.preventDefault();
+		$('.contact-cont').slideToggle('slow');
+		$('.contact-cont').siblings().hide();
+	});
+	
+	//busqueda toggle
+	$('.busqueda').click(function(e){
+		e.preventDefault();
+		$('.busqueda-cont').slideToggle('slow');
+		$('.busqueda-cont').siblings().hide();
+	});
+	
+	//taller toggle
+	$('.taller').click(function(e){
+		e.preventDefault();
+		$('.taller-cont').slideToggle('slow');
+		$('.taller-cont').siblings().hide();
+	});
+	
+	//taller toggle
+	$('.editorial').click(function(e){
+		e.preventDefault();
+		$('.editorial-cont').slideToggle('slow');
+		$('.editorial-cont').siblings().hide();
+	});
 
-  var navdrawerContainer = querySelector('.navdrawer-container');
-  var body = document.body;
-  var appbarElement = querySelector('.app-bar');
-  var menuBtn = querySelector('.menu');
-  var main = querySelector('main');
 
-  function closeMenu() {
-    body.classList.remove('open');
-    appbarElement.classList.remove('open');
-    navdrawerContainer.classList.remove('open');
-  }
-
-  function toggleMenu() {
-    body.classList.toggle('open');
-    appbarElement.classList.toggle('open');
-    navdrawerContainer.classList.toggle('open');
-    navdrawerContainer.classList.add('opened');
-  }
-
-  main.addEventListener('click', closeMenu);
-  menuBtn.addEventListener('click', toggleMenu);
-  navdrawerContainer.addEventListener('click', function (event) {
-    if (event.target.nodeName === 'A' || event.target.nodeName === 'LI') {
-      closeMenu();
-    }
-  });
-})();
+	
+	
+});
