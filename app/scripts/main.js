@@ -48,6 +48,25 @@ $(document).ready(function(){
 	});
 
 
+
+	//taller toggle para imagenes
+	//preparacion
+	$('.preparacion-btn').click(function(e){
+		e.preventDefault();
+		$('#preparacion').slideToggle('slow');
+		$('#preparacion').siblings().hide();
+	});
+	
+	//taller toggle para imagenes
+	//preparacion
+	$('.incubacion-btn').click(function(e){
+		e.preventDefault();
+		$('#incubacion').slideToggle('slow');
+		$('#incubacion').siblings().hide();
+	});
+	
+
+
 	
 	
 });

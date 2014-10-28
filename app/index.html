@@ -22,7 +22,7 @@
     <meta name="msapplication-TileColor" content="#3372DF">
     
     <!--javascript-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
     <script type="text/javascript" src="scripts/main.js"></script>
 
    <!-- Page styles -->
@@ -46,19 +46,31 @@
   	 	<div class="top cf">
 	  		<h2>TALLER</h2> <img src="images/taller/sa.png" alt="SA">
   	 	</div>
+  	 	
   	 	<div class="taller-imgs">
-	  	 	<img src="images/taller/foto-taller-1.jpg" alt="">
+  	 		
+  	 		<div id="preparacion">
+	  	 		<img src="images/taller/foto-taller-1.jpg" alt="">
+  	 		</div>
+  	 		
+  	 		<div id="incubacion" style="display:none;">
+	  	 		<img src="images/taller/foto-taller-2.jpg" alt="">
+  	 		</div>	
+  	 		
+  	 		
   	 	</div>
+  	 	
   	 	<nav>
 	  	 	<ul>
-		  	 	<li><a href="">PREPARACÍON</a></li> -
-		  	 	<li><a href="">INCUBACIÓN</a></li> -
+		  	 	<li><a href="" class="preparacion-btn">PREPARACÍON</a></li> -
+		  	 	<li><a href="" class="incubacion-btn">INCUBACIÓN</a></li> -
 		  	 	<li><a href="">ILUMINACIÓN</a></li> -
 		  	 	<li><a href="">VERIFICACIÓN</a></li> -
 		  	 	<li><a href="">PREPARACÍON</a></li> -
 		  	 	<li><a href="">INCUBACIÓN</a></li>
 	  	 	</ul>
   	 	</nav>
+  	 	
 	  </div>
 
 	  
@@ -117,7 +129,6 @@
 	  	<span>SUSTENTABILIDAD</span>
 	  </a>
   </div>	
- 
- 
+  
   </body>
 </html>
