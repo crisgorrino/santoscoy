@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 	//taller toggle para imagenes
 	//preparacion
-	$('.preparacion-btn').click(function(e){
+	/*$('.preparacion-btn').click(function(e){
 		e.preventDefault();
 		$('#preparacion').slideToggle('slow');
 		$('#preparacion').siblings().hide();
@@ -64,7 +64,7 @@ $(document).ready(function(){
 		$('#incubacion').slideToggle('slow');
 		$('#incubacion').siblings().hide();
 	});
-	
+	*/
 
 
 	

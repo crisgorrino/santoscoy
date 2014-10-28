@@ -4,15 +4,16 @@
 		h2{font-weight:normal; margin:0; padding:0 20%; color:$second-gray; font-size:.9em; letter-spacing:2px; text-transform: uppercase; 				display:inline-block; vertical-align:bottom;}
 	 }
 	
-	.taller-imgs{width:960px; margin:0 auto;
-		img{width:100%; display:block;}
+	.taller-imgs{width:100%; background-color:#aeaeae; position:relative;
+		img{width:80%; display:block; margin:0 auto;}
 	}
 	
-	nav{padding:1% 0; border-top:1px solid $border-colors; border-bottom:1px solid $border-colors; clear:both; text-align:center;
-		ul{width:960px; margin:0px auto; list-style-type: none;
+	
+	ul{padding:1% 0; border-top:1px solid $border-colors; border-bottom:1px solid $border-colors; clear:both; text-align:center;
+	   list-style-type:none; margin:0;
 			li{display: inline-block; vertical-align: middle; width:145px;
 				a{color:$second-gray; text-decoration:none; font-size: .8em; letter-spacing: 2px; &:hover{color:$main-blue;}}
 			}
 		}
-	}
+	
 }

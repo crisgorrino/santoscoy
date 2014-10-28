@@ -22,12 +22,21 @@
     <meta name="msapplication-TileColor" content="#3372DF">
     
     <!--javascript-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/main.js"></script> 
+    <script src="scripts/jquery.easytabs.min.js" type="text/javascript"></script>
+	<script src="scripts/jquery.hashchange.min.js" type="text/javascript"></script>
+    
 
    <!-- Page styles -->
     <link rel="stylesheet" href="styles/main.css">
-
+	
+	<script type="text/javascript">
+	    $(document).ready( function() {
+	      $('#tab-container').easytabs();
+	    });
+    </script>
+    
   </head>
   <body>
   
@@ -42,37 +51,51 @@
 	</div>
   
   
-  	 <div class="taller-cont cf">
+  	 <div class="taller-cont cf" >
   	 	<div class="top cf">
 	  		<h2>TALLER</h2> <img src="images/taller/sa.png" alt="SA">
   	 	</div>
   	 	
-  	 	<div class="taller-imgs">
-  	 		
-  	 		<div id="preparacion">
-	  	 		<img src="images/taller/foto-taller-1.jpg" alt="">
-  	 		</div>
-  	 		
-  	 		<div id="incubacion" style="display:none;">
-	  	 		<img src="images/taller/foto-taller-2.jpg" alt="">
-  	 		</div>	
-  	 		
-  	 		
-  	 	</div>
-  	 	
-  	 	<nav>
-	  	 	<ul>
-		  	 	<li><a href="" class="preparacion-btn">PREPARACÍON</a></li> -
-		  	 	<li><a href="" class="incubacion-btn">INCUBACIÓN</a></li> -
-		  	 	<li><a href="">ILUMINACIÓN</a></li> -
-		  	 	<li><a href="">VERIFICACIÓN</a></li> -
-		  	 	<li><a href="">PREPARACÍON</a></li> -
-		  	 	<li><a href="">INCUBACIÓN</a></li>
-	  	 	</ul>
-  	 	</nav>
-  	 	
+  	 	<div id="tab-container" class="tab-container">
+	  	 	<div class="taller-imgs panel-container">
+	  	 		
+	  	 		<div id="preparacion">
+		  	 		<img src="images/taller/foto-taller-1.jpg" alt="">
+	  	 		</div>
+	  	 		
+	  	 		<div id="incubacion">
+		  	 		<img src="images/taller/foto-taller-2.jpg" alt="">
+	  	 		</div>
+	  	 		
+	  	 		<div id="iluminacion">
+		  	 		<img src="images/taller/foto-taller-1.jpg" alt="">
+	  	 		</div>
+	  	 		
+	  	 		<div id="verificacion">
+		  	 		<img src="images/taller/foto-taller-3.jpg" alt="">
+	  	 		</div>
+	  	 		
+	  	 		<!--<div id="preparacion">
+		  	 		<img src="images/taller/foto-taller-1.jpg" alt="">
+	  	 		</div>
+	  	 		
+	  	 		<div id="incubacion">
+		  	 		<img src="images/taller/foto-taller-2.jpg" alt="">
+	  	 		</div>-->	
+	  	 		
+	  	 		
+	  	 	</div>
+	  	 	  	 	
+	  	 	<ul class='etabs'>
+		  	 	<li class='tab'><a href="#preparacion">PREPARACÍON</a></li> -
+		  	 	<li class='tab'><a href="#incubacion">INCUBACIÓN</a></li> -
+		  	 	<li class='tab'><a href="#iluminacion">ILUMINACIÓN</a></li> -
+		  	 	<li class='tab'><a href="#verificacion">VERIFICACIÓN</a></li> <!---
+		  	 	<li class='tab'><a href="#preparacion">PREPARACÍON</a></li> -
+		  	 	<li class='tab'><a href="#incubacion">INCUBACIÓN</a></li>-->
+	  	 	</ul>  	 	
 	  </div>
-
+  	 </div>
 	  
 	  <div class="contact-cont cf">
 	  	<h2 class="left">Contacto</h2> <span class="close right">CERRAR X</span>
@@ -114,21 +137,57 @@
 	  	</nav>	  	
   	</header>
   <!--header-->
+  <div class="main">
+	  
+	  <!--filtros-->
+	  <div class="filtros">
+		  <a href="" class="active">
+		  	<img src="images/filtros/filtro-a.png" alt="">
+		  	<span>ARQUITECTURA</span>
+		  </a>
+		  <a href="">
+		  	<img src="images/filtros/filtro-i.png" alt="">
+		  	<span>INTERIORISMO</span>
+		  </a>
+		  <a href="">
+		  	<img src="images/filtros/filtro-s.png" alt="">
+		  	<span>SUSTENTABILIDAD</span>
+		  </a>
+		  
+		  <div class="conceptos">
+		  	<div class="conceptos-inner">
+			  <a href="">HAIGH PARK QUERETARO</a> -  <a href="">TORRE PÓRTICA</a> -  <a href="">LOBBY</a> - <a href="">HAIGH PARK QUERETARO</a> -  
+			  <a href="">TORRE PÓRTICA</a> -  <a href="">LOBBY</a> - <a href="">HAIGH PARK QUERETARO</a> -  <a href="">TORRE PÓRTICA</a> -  
+			  <a href="">LOBBY</a> - <a href="" class="active">HAIGH PARK QUERETARO</a> -  <a href="">TORRE PÓRTICA</a> -  <a href="">LOBBY</a> - 
+			  <a href="">HAIGH PARK QUERETARO</a> -  <a href="">TORRE PÓRTICA</a> -  <a href="">LOBBY</a> -
+			  <a href="">HAIGH PARK QUERETARO</a> -  <a href="">TORRE PÓRTICA</a> -  <a href="">LOBBY</a> - <a href="">HAIGH PARK QUERETARO</a> -  
+			  <a href="">TORRE PÓRTICA</a> -  <a href="">LOBBY</a> - <a href="">HAIGH PARK QUERETARO</a> -  <a href="">TORRE PÓRTICA</a> -  
+			  <a href="">LOBBY</a> - <a href="">HAIGH PARK QUERETARO</a> -  <a href="">TORRE PÓRTICA</a> -  <a href="">LOBBY</a> - 
+		  	</div>
+		  </div>		  
+	  </div>
+	  <!--filtros-->
+	  
+	  <!--main gallery-->
+	   <div class="main-gal">
+	   		<span>14 / 27</span>	
+		  <img src="images/proyectos/proyecto-main.jpg" alt="HAIGH PARK QUERETARO">
+		  
+		  <div class="titulo-main">
+		  	<h3>HAIGH PARK QUERETARO</h3>
+		  </div>
+		  
+	   </div>
+	  <!--main gallery-->
+	  
+	  <div class="main-img">
+	  	<img src="images/proyectos/bg-image-1.jpg" alt="">
+	  </div>		
+  </div>
   
-  <div class="filtros">
-	  <a href="" class="active">
-	  	<img src="images/filtros/filtro-a.png" alt="">
-	  	<span>ARQUITECTURA</span>
-	  </a>
-	  <a href="">
-	  	<img src="images/filtros/filtro-i.png" alt="">
-	  	<span>INTERIORISMO</span>
-	  </a>
-	  <a href="">
-	  	<img src="images/filtros/filtro-s.png" alt="">
-	  	<span>SUSTENTABILIDAD</span>
-	  </a>
-  </div>	
+  <div class="detalle-proyecto">
+	  
+  </div>
   
   </body>
 </html>
