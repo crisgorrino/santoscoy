@@ -1,9 +1,11 @@
 //helper classes
 .left{float:left;}
 .right{float:right;}
-
+.center{text-align: center;}
+.justify{text-align: justify;}
 //buttons
 .close, .close-busq{padding:0 20% 0 0; cursor:pointer;}
+.vista{color:$main-blue; cursor:pointer;}
 
 // main styles
 .section-pages-cont{background-color:$pages-bg;}
