@@ -673,10 +673,13 @@ footer {
     width: 100%;
     background-color: #aeaeae;
     position: relative; }
-    .taller-cont .taller-imgs img {
-      width: 80%;
-      display: block;
-      margin: 0 auto; }
+    .taller-cont .taller-imgs div {
+      position: relative;
+      margin: 0 auto;
+      width: 80%; }
+      .taller-cont .taller-imgs div img {
+        width: 100%;
+        display: block; }
   .taller-cont ul {
     padding: 1% 0;
     border-top: 1px solid #707070;
@@ -696,6 +699,41 @@ footer {
         letter-spacing: 2px; }
         .taller-cont ul li a:hover {
           color: #00aeef; }
+
+.cruz {
+  position: absolute;
+  color: #bdbec1;
+  margin: 0;
+  font-weight: normal;
+  font-size: 4em; }
+  .cruz:hover {
+    color: #00aeef;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top; }
+  .cruz p {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #322f31;
+    padding: 20px;
+    margin: 0;
+    color: #bdbec1;
+    font-weight: normal;
+    letter-spacing: 2px;
+    width: 260px; }
+    .cruz p .cruztitle {
+      border-top: 1px solid #00aeef;
+      border-bottom: 1px solid #00aeef;
+      display: block;
+      font-size: 10px;
+      font-weight: normal;
+      padding: 5px 0;
+      text-align: left; }
+    .cruz p span {
+      display: block;
+      font-size: 10px;
+      padding: 5px 0;
+      text-align: center; }
 
 .editorial-cont {
   padding: 1% 0; }

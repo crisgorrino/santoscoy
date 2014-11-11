@@ -66,7 +66,10 @@ $(document).ready(function(){
 	});
 	*/
 
-
+	$('.cruz p').hide();
 	
+	$('.cruz').hover(function(){
+		$(this).children().slideToggle();
+	});
 	
 });

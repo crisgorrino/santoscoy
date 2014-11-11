@@ -5,7 +5,9 @@
 	 }
 	
 	.taller-imgs{width:100%; background-color:#aeaeae; position:relative;
-		img{width:80%; display:block; margin:0 auto;}
+		div{position:relative; margin:0 auto; width:80%;
+			img{width:100%; display:block;}
+		}
 	}
 	
 	
@@ -17,3 +19,13 @@
 		}
 	
 }
+
+.cruz{position:absolute; color:$main-gray; margin:0; font-weight: normal; font-size:4em;&:hover{color:$main-blue; cursor:pointer; display:inline-block; vertical-align:top;}
+	
+		p{
+			display:inline-block; vertical-align: top; background-color:#322f31; padding:20px; margin:0; color:$main-gray;font-weight: normal; letter-spacing: 2px; width:260px;
+			.cruztitle{border-top:1px solid $main-blue; border-bottom:1px solid $main-blue; display: block; font-size:10px; font-weight: normal; padding:5px 0; text-align:left;}
+			span{display:block; font-size:10px; padding:5px 0; text-align:center;}
+		}
+	
+	}
