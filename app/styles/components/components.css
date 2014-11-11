@@ -378,10 +378,16 @@ html, body {
   color: #322f31; }
 
 /* Tiny Carousel */
+.slide-container {
+  background-color: #c0c0c0;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  margin: 20px 0; }
+
 #slider1 {
   height: 1%;
   overflow: hidden;
-  padding: 0 0 10px;
+  padding: 0;
   width: 70%;
   margin: 0 auto; }
 
@@ -389,7 +395,7 @@ html, body {
   float: left;
   margin: 0 auto;
   width: 90%;
-  height: 125px;
+  height: 116px;
   overflow: hidden;
   position: relative; }
 
@@ -430,7 +436,7 @@ html, body {
 #slider1 .overview li {
   float: left;
   margin: 0;
-  padding: 15px;
+  padding: 0px 15px;
   height: auto;
   width: 80px;
   text-align: center;
@@ -855,3 +861,13 @@ footer {
       vertical-align: bottom; }
     .editorial-cont .top img {
       display: inline-block; }
+
+.edicion-desc {
+  width: 40%;
+  margin: 0 auto; }
+  .edicion-desc p {
+    letter-spacing: 2px;
+    font-size: .8em;
+    margin: 20px 0;
+    line-height: 20px;
+    text-transform: uppercase; }
