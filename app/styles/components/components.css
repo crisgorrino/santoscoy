@@ -374,7 +374,8 @@ blockquote {
   font-weight: normal;
   font-style: normal; }
 html, body {
-  font-family: futura-book; }
+  font-family: futura-book;
+  color: #322f31; }
 
 header {
   width: 100%;
@@ -635,6 +636,42 @@ footer {
           letter-spacing: 2px; }
           .contact-cont nav ul li a:hover {
             color: #00aeef; }
+          .contact-cont nav ul li a img {
+            display: inline-block;
+            vertical-align: middle; }
+  .contact-cont .contact-inner {
+    width: 55%;
+    margin: 0 auto; }
+    .contact-cont .contact-inner .contact-info {
+      border-top: 1px solid #00aeef;
+      display: inline-block;
+      margin: 20px 0; }
+      .contact-cont .contact-inner .contact-info p {
+        border-bottom: 1px solid #00aeef;
+        margin: 0;
+        font-size: .7em;
+        display: block;
+        padding: 5px 0; }
+        .contact-cont .contact-inner .contact-info p:nth-child(1) {
+          letter-spacing: 2px; }
+  .contact-cont .carlossantoscoy {
+    display: inline-block;
+    margin: 20px 0;
+    vertical-align: top; }
+    .contact-cont .carlossantoscoy h4 {
+      margin: 0 100px;
+      text-align: center; }
+  .contact-cont .redes {
+    display: inline-block;
+    margin: 20px 0;
+    vertical-align: top; }
+    .contact-cont .redes a {
+      display: block;
+      text-decoration: none;
+      color: #322f31;
+      padding-bottom: 15px;
+      font-size: .8em;
+      letter-spacing: 2px; }
 
 .busqueda-cont {
   padding: 1% 0; }
@@ -674,7 +711,6 @@ footer {
     background-color: #aeaeae;
     position: relative; }
     .taller-cont .taller-imgs div {
-      position: relative;
       margin: 0 auto;
       width: 80%; }
       .taller-cont .taller-imgs div img {
@@ -699,18 +735,21 @@ footer {
         letter-spacing: 2px; }
         .taller-cont ul li a:hover {
           color: #00aeef; }
+    .taller-cont ul li.active a {
+      color: #00aeef; }
 
 .cruz {
   position: absolute;
-  color: #bdbec1;
+  color: #aeaeae;
   margin: 0;
   font-weight: normal;
-  font-size: 4em; }
+  font-size: 4em;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 100; }
   .cruz:hover {
     color: #00aeef;
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: top; }
+    cursor: pointer; }
   .cruz p {
     display: inline-block;
     vertical-align: top;
