@@ -500,7 +500,7 @@ footer {
     text-decoration: none;
     display: inline-block;
     color: #bdbec1;
-    width: 23%;
+    width: 320px;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     opacity: 1;
@@ -526,7 +526,7 @@ footer {
     text-align: left;
     color: #bdbec1; }
     .filtros .conceptos .conceptos-inner {
-      width: 80%;
+      width: 980px;
       margin: 0 auto; }
       .filtros .conceptos .conceptos-inner a {
         color: #bdbec1;
@@ -553,7 +553,7 @@ footer {
     padding: 2% 0; }
   .main-gal img {
     display: block;
-    width: 80%;
+    width: 980px;
     margin: 0 auto; }
   .main-gal .titulo-main {
     border-top: 1px solid #707070;
@@ -644,7 +644,7 @@ footer {
   text-align: justify; }
 
 .close, .close-busq {
-  padding: 0 20% 0 0;
+  padding: 0 0% 0 0;
   cursor: pointer; }
 
 .vista {
@@ -680,7 +680,7 @@ footer {
   .contact-cont h2 {
     font-weight: normal;
     margin: 0;
-    padding: 0 20%;
+    padding: 0 0%;
     color: #3b383a;
     font-size: .9em;
     letter-spacing: 2px;
@@ -691,7 +691,7 @@ footer {
     border-bottom: 1px solid #707070;
     clear: both; }
     .contact-cont nav ul {
-      padding: 0% 20%;
+      padding: 0% 0%;
       list-style-type: none;
       margin: 0; }
       .contact-cont nav ul li {
@@ -711,7 +711,7 @@ footer {
             display: inline-block;
             vertical-align: middle; }
   .contact-cont .contact-inner {
-    width: 55%;
+    width: 865px;
     margin: 0 auto; }
     .contact-cont .contact-inner .contact-info {
       border-top: 1px solid #00aeef;
@@ -727,8 +727,9 @@ footer {
           letter-spacing: 2px; }
   .contact-cont .carlossantoscoy {
     display: inline-block;
-    margin: 20px 0;
-    vertical-align: top; }
+    margin: 20px 20px 20px 0px;
+    vertical-align: top;
+    width: 432px; }
     .contact-cont .carlossantoscoy h4 {
       margin: 0 100px;
       text-align: center; }
@@ -754,13 +755,13 @@ footer {
     background-color: #c7c7c7; }
     .busqueda-cont form p {
       margin: 0;
-      padding: 0 0 0 20%; }
+      padding: 0 0 0 0%; }
       .busqueda-cont form p input[type="text"] {
         background-color: transparent;
         border: none;
         outline: none; }
   .busqueda-cont .busqueda-resultados {
-    width: 60%;
+    width: 960px;
     margin: 2% auto; }
     .busqueda-cont .busqueda-resultados .resultado {
       width: 29%;
@@ -815,7 +816,7 @@ footer {
     .taller-cont .top h2 {
       font-weight: normal;
       margin: 0;
-      padding: 0 20%;
+      padding: 0 350px 0 0%;
       color: #3b383a;
       font-size: .9em;
       letter-spacing: 2px;
@@ -823,12 +824,13 @@ footer {
       display: inline-block;
       vertical-align: bottom; }
   .taller-cont .taller-imgs {
-    width: 100%;
+    width: 980px;
+    margin: 0 auto;
     background-color: #aeaeae;
     position: relative; }
     .taller-cont .taller-imgs div {
       margin: 0 auto;
-      width: 80%; }
+      width: 980px; }
       .taller-cont .taller-imgs div img {
         width: 100%;
         display: block; }
@@ -890,6 +892,10 @@ footer {
       padding: 5px 0;
       text-align: center; }
 
+.inner {
+  width: 980px;
+  margin: 0 auto; }
+
 .editorial-cont {
   padding: 1% 0; }
   .editorial-cont .top {
@@ -900,7 +906,7 @@ footer {
     .editorial-cont .top h2 {
       font-weight: normal;
       margin: 0;
-      padding: 0 170px  0 20%;
+      padding: 0 270px 0 0%;
       color: #3b383a;
       font-size: .9em;
       letter-spacing: 2px;
@@ -909,6 +915,9 @@ footer {
       vertical-align: bottom; }
     .editorial-cont .top img {
       display: inline-block; }
+    .editorial-cont .top .vista-gray {
+      margin-top: 4%;
+      float: right; }
 
 .edicion-desc {
   width: 40%;
