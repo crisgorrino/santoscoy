@@ -914,7 +914,7 @@ footer {
     .editorial-cont .top h2 {
       font-weight: normal;
       margin: 0;
-      padding: 0 270px 0 0%;
+      padding: 0 305px 0 0%;
       color: #3b383a;
       font-size: .9em;
       letter-spacing: 2px;
@@ -926,6 +926,11 @@ footer {
     .editorial-cont .top .vista-gray {
       margin-top: 4%;
       float: right; }
+  .editorial-cont .counter {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center; }
 
 .edicion-desc {
   width: 40%;
