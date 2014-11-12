@@ -15,7 +15,10 @@ header{width:100%; background-color: rgba(0, 0, 0, 0.9);
 	}
  
 	.logo-cont{text-align:center; border-top:1px solid $border-colors; border-bottom:1px solid $border-colors;
+		 .inner{position:relative;}
 		a{display:inline-block;}
+		
+		.vista{ top: 50px; position: absolute; right:0;}
 	}
  
 }

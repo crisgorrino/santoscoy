@@ -470,8 +470,14 @@ header {
     text-align: center;
     border-top: 1px solid #707070;
     border-bottom: 1px solid #707070; }
+    header .logo-cont .inner {
+      position: relative; }
     header .logo-cont a {
       display: inline-block; }
+    header .logo-cont .vista {
+      top: 50px;
+      position: absolute;
+      right: 0; }
 
 footer {
   background-color: #1a1919;
@@ -649,10 +655,12 @@ footer {
 
 .vista {
   color: #00aeef;
-  cursor: pointer; }
+  cursor: pointer;
+  letter-spacing: 2px; }
 
 .vista-gray {
-  cursor: pointer; }
+  cursor: pointer;
+  letter-spacing: 2px; }
 
 .section-pages-cont {
   background-color: #cccccc; }

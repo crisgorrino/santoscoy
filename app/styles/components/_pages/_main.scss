@@ -5,8 +5,8 @@
 .justify{text-align: justify;}
 //buttons
 .close, .close-busq{padding:0 0% 0 0; cursor:pointer;}
-.vista{color:$main-blue; cursor:pointer;}
-.vista-gray{cursor:pointer;}
+.vista{color:$main-blue; cursor:pointer; letter-spacing:2px;}
+.vista-gray{cursor:pointer; letter-spacing:2px;}
 
 // main styles
 .section-pages-cont{background-color:$pages-bg;}
